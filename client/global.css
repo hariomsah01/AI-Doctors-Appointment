@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 13% 23%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 13% 23%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 13% 23%;
+
+    --primary: 198 88% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 194 68% 96%;
+    --secondary-foreground: 198 88% 35%;
+
+    --muted: 210 15% 96%;
+    --muted-foreground: 210 10% 52%;
+
+    --accent: 162 73% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 91%;
+    --input: 210 15% 91%;
+    --ring: 198 88% 48%;
+
+    --radius: 0.75rem;
+
+    /* Medical app specific colors */
+    --medical-primary: 198 88% 48%;
+    --medical-secondary: 162 73% 46%;
+    --medical-neutral: 210 15% 96%;
+    --medical-warning: 42 96% 59%;
+    --medical-success: 142 70% 45%;
+    --medical-error: 0 84% 60%;
+    --medical-text: 210 13% 23%;
+    --medical-light: 194 68% 96%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 23% 8%;
+    --foreground: 210 15% 96%;
+
+    --card: 210 20% 12%;
+    --card-foreground: 210 15% 96%;
+
+    --popover: 210 20% 12%;
+    --popover-foreground: 210 15% 96%;
+
+    --primary: 198 88% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 16%;
+    --secondary-foreground: 198 88% 48%;
+
+    --muted: 210 20% 16%;
+    --muted-foreground: 210 10% 65%;
+
+    --accent: 162 73% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 20%;
+    --ring: 198 88% 48%;
+
+    /* Medical app dark specific colors */
+    --medical-primary: 198 88% 48%;
+    --medical-secondary: 162 73% 46%;
+    --medical-neutral: 210 20% 16%;
+    --medical-warning: 42 96% 59%;
+    --medical-success: 142 70% 45%;
+    --medical-error: 0 84% 60%;
+    --medical-text: 210 15% 96%;
+    --medical-light: 210 20% 12%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
